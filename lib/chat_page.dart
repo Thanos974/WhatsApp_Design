@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'main.dart';
 
 class ChatPage extends StatelessWidget {
@@ -32,7 +31,8 @@ class ChatPage extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: BottomSection(),
+      body: const ChatingSection(),
+      bottomNavigationBar: const BottomSection(),
     );
   }
 }
@@ -49,21 +49,86 @@ class BottomSection extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         color: dWhite,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Expanded(
               child: Container(
-                color: dGreen,
-                height: 60,
+                height: 43,
+                decoration: const BoxDecoration(
+                  color: dGreen,
+                  borderRadius: BorderRadius.all(Radius.circular(30)),
+                ),
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Icon(
+                      Icons.insert_emoticon,
+                      size: 25.0,
+                      color: Colors.white,
+                    ),
+                    SizedBox(
+                      width: 8.0,
+                    ),
+                    Expanded(
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                        ),
+                      ),
+                    ),
+                    Icon(
+                      Icons.upload_outlined,
+                      size: 25.0,
+                      color: Colors.white,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Icon(
+                      Icons.image,
+                      size: 25.0,
+                      color: Colors.white,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                  ],
+                ),
               ),
             ),
             Container(
-              height: 60,
-              width: 60,
-              color: Colors.blue,
+              margin: const EdgeInsets.only(
+                left: 25,
+              ),
+              height: 45,
+              width: 45,
+              decoration: const BoxDecoration(
+                color: dGreen,
+                shape: BoxShape.circle,
+              ),
+              child: const IconButton(
+                icon: Icon(
+                  Icons.mic_none_sharp,
+                  color: Colors.white,
+                ),
+                onPressed: null,
+              ),
             )
           ],
         ),
       ),
     );
+  }
+}
+
+class ChatingSection extends StatelessWidget {
+  const ChatingSection({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
