@@ -111,6 +111,10 @@ class FavoriteSection extends StatelessWidget {
     {'name': "Julia", 'profile': 'images/avatar/julia.jpg'},
     {'name': "Ceo", 'profile': 'images/avatar/ceo.jpg'},
     {'name': "Katty", 'profile': 'images/avatar/katty.jpg'},
+    {'name': 'Meriva', 'profile': 'images/avatar/meriva.jpg'},
+    {'name': 'Hélène', 'profile': 'images/avatar/helene.jpg'},
+    {'name': 'Tom', 'profile': 'images/avatar/tom.jpg'},
+    {'name': 'Fred', 'profile': 'images/avatar/fred.jpg'},
   ];
 
   @override
@@ -221,6 +225,13 @@ class MessageSection extends StatelessWidget {
       'date': '16:32',
     },
     {
+      'senderProfile': 'images/avatar/fred.jpg',
+      'senderName': 'Fred',
+      'message': "Salut l'ami! 😁",
+      'unRead': 0,
+      'date': '16:32',
+    },
+    {
       'senderProfile': 'images/avatar/katty.jpg',
       'senderName': 'katty',
       'message': 'Hello Boy',
@@ -228,15 +239,15 @@ class MessageSection extends StatelessWidget {
       'date': '16:30',
     },
     {
-      'senderProfile': 'images/avatar/thanos.jpg',
-      'senderName': 'Manu',
+      'senderProfile': 'images/avatar/tom.jpg',
+      'senderName': 'Tom',
       'message': 'Hey girls?',
       'unRead': 0,
       'date': '16:31',
     },
     {
-      'senderProfile': 'images/avatar/julia.jpg',
-      'senderName': 'Julia',
+      'senderProfile': 'images/avatar/helene.jpg',
+      'senderName': 'Hélène',
       'message': 'Bye !! 😁',
       'unRead': 3,
       'date': '16:32',
