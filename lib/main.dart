@@ -251,6 +251,48 @@ class MessageSection extends StatelessWidget {
       'message': 'Bye !! 😁',
       'unRead': 3,
       'date': '16:32',
+    },
+    {
+      'senderProfile': 'images/avatar/katty.jpg',
+      'senderName': 'katty',
+      'message': 'Hello Boy',
+      'unRead': 3,
+      'date': '16:30',
+    },
+    {
+      'senderProfile': 'images/avatar/tom.jpg',
+      'senderName': 'Tom',
+      'message': 'Hey girls?',
+      'unRead': 0,
+      'date': '16:31',
+    },
+    {
+      'senderProfile': 'images/avatar/helene.jpg',
+      'senderName': 'Hélène',
+      'message': 'Bye !! 😁',
+      'unRead': 3,
+      'date': '16:32',
+    },
+    {
+      'senderProfile': 'images/avatar/katty.jpg',
+      'senderName': 'katty',
+      'message': 'Hello Boy',
+      'unRead': 3,
+      'date': '16:30',
+    },
+    {
+      'senderProfile': 'images/avatar/tom.jpg',
+      'senderName': 'Tom',
+      'message': 'Hey girls?',
+      'unRead': 0,
+      'date': '16:31',
+    },
+    {
+      'senderProfile': 'images/avatar/helene.jpg',
+      'senderName': 'Hélène',
+      'message': 'Bye !! 😁',
+      'unRead': 3,
+      'date': '16:32',
     }
   ];
 

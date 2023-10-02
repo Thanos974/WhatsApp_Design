@@ -60,8 +60,8 @@ class BottomSection extends StatelessWidget {
                   color: dGreen,
                   borderRadius: BorderRadius.all(Radius.circular(30)),
                 ),
-                child: Row(
-                  children: const [
+                child: const Row(
+                  children: [
                     SizedBox(
                       width: 10.0,
                     ),
